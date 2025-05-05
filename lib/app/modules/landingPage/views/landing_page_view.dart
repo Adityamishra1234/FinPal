@@ -1,3 +1,4 @@
+import 'package:finance_app/app/modules/auth/views/auth_view.dart';
 import 'package:finance_app/common/app_images.dart';
 import 'package:finance_app/common/app_texts.dart';
 import 'package:flutter/material.dart';
@@ -7,6 +8,7 @@ import 'package:get/get.dart';
 import '../../../../common/app_buttons.dart';
 import '../../../../common/app_colors.dart';
 import '../../../../common/app_containers.dart';
+import '../../../routes/app_pages.dart';
 import '../controllers/landing_page_controller.dart';
 
 class LandingPageView extends GetView<LandingPageController> {
@@ -58,6 +60,9 @@ class LandingPageView extends GetView<LandingPageController> {
                     iconColor: AppColors.white,
                     onTap: () {
                       controller.nextPage(AppImages.onboardingImages.length);
+                      if(isLast){
+                        Navigator.pushReplacementNamed(context, Routes.AUTH);
+                      }
                     },
                   ),
                 );

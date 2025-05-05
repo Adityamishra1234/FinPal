@@ -8,8 +8,13 @@ class AppColors{
   static Color pinkColor = Color(0xffFF77D7);
   static Color black = Colors.black;
   static Color white = Colors.white;
+  static const Color red = Color(0xFFef413b);
   static Color transparent = Colors.transparent;
   static Color success = Color(0xff1EC756);
+  static Color bgBottom = Color(0xff1EC756);
+  static Color bgTop = Color(0xffFFEDF9);
+  static const Color errorLight = Color.fromARGB(255, 196, 32, 32);
+  static const Color onErrorLight = Color.fromARGB(255, 245, 39, 39);
 
 
   //gradients
@@ -62,6 +67,38 @@ class AppColors{
       color: AppColors.black,
       fontWeight: FontWeight.w500,
       fontSize: 16,
+    )
+  );
+  static  TextStyle createAccount = GoogleFonts.jost(
+    textStyle: TextStyle(
+
+      color: AppColors.primaryColor,
+      fontWeight: FontWeight.w500,
+      fontSize: 16,
+    )
+  );
+  static  TextStyle needHelpStyle = GoogleFonts.jost(
+    textStyle: TextStyle(
+      decoration: TextDecoration.underline,
+      decorationColor: primaryColor,
+      color: AppColors.primaryColor,
+      fontWeight: FontWeight.w500,
+      fontSize: 14,
+    )
+  );
+  static  TextStyle authentication = GoogleFonts.jost(
+    textStyle: TextStyle(
+
+      color: AppColors.black,
+      fontWeight: FontWeight.w500,
+      fontSize: 25,
+    )
+  );
+  //placeHolder
+  static  TextStyle hintTextStyle = GoogleFonts.jost(
+    textStyle: TextStyle(
+      color: AppColors.black.withOpacity(0.7),
+      fontWeight: FontWeight.w500,
     )
   );
 

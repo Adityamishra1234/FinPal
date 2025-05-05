@@ -52,7 +52,7 @@ class _CustomButtonState extends State<CustomButton> {
             ),
             const SizedBox(width: 10,),
             Flexible(
-              child: Icon(widget.icon ?? Icons.add, color: widget.iconColor ?? AppColors.black,),
+              child: Icon(widget.icon ??  Icons.arrow_circle_right_rounded, color: widget.iconColor ?? AppColors.black,),
             )
           ],
         ),
