@@ -1,4 +1,6 @@
 import 'package:finance_app/app/modules/createNewPassword/views/create_new_password_view.dart';
+import 'package:finance_app/app/modules/financialAssesment/views/financial_assesment_view.dart';
+import 'package:finance_app/common/app_constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -103,7 +105,7 @@ class VerificationPageView extends GetView<VerificationPageController> {
                   iconColor: AppColors.white,
                   icon: Icons.arrow_circle_right_rounded,
                   buttonText: "Continue",
-                  onTap: () => Get.to(()=>CreateNewPasswordView()),
+                  onTap: () => (goToFinancialAssessment == false)?Get.to(()=>CreateNewPasswordView()) : Get.to(()=> FinancialAssessmentView()),
                 ),
 
 

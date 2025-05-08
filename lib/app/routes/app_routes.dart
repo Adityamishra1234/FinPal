@@ -11,6 +11,7 @@ abstract class Routes {
   static const VERIFICATION_PAGE = _Paths.VERIFICATION_PAGE;
   static const CREATE_NEW_PASSWORD = _Paths.CREATE_NEW_PASSWORD;
   static const REGISTRATION_PAGE = _Paths.REGISTRATION_PAGE;
+  static const FINANCIAL_ASSESSMENT = _Paths.FINANCIAL_ASSESSMENT;
 }
 
 abstract class _Paths {
@@ -23,4 +24,5 @@ abstract class _Paths {
   static const VERIFICATION_PAGE = '/verification-page';
   static const CREATE_NEW_PASSWORD = '/create-new-password';
   static const REGISTRATION_PAGE = '/registration-page';
+  static const FINANCIAL_ASSESSMENT = '/financial-assessment';
 }

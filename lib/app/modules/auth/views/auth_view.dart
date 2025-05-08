@@ -8,6 +8,7 @@ import 'package:flutter/services.dart';
 
 import 'package:get/get.dart';
 
+import '../../../../common/app_constants.dart';
 import '../../../../common/app_images.dart';
 import '../../../../common/app_textField.dart';
 import '../../registrationPage/views/registration_page_view.dart';
@@ -29,12 +30,13 @@ class AuthView extends GetView<AuthController> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 SizedBox(height: height* 0.06,),
-                Image.asset(AppImages.appLogo, scale: 1.2,),
+                Image.asset(AppImages.appLogo, scale: 1.3,),
                 SizedBox(height: height* 0.03,),
                 Text(AppTexts.loginAccount, style: AppColors.authentication,),
                 Text(AppTexts.pleaseLoginToContinue, style: AppColors.landingPageTextStyleDescription,),
                 SizedBox(height: height* 0.08,),
                 CustomTextField(
+
                   keyboardType: TextInputType.phone,
                   inputFormatters: [
                     FilteringTextInputFormatter.digitsOnly,
@@ -64,6 +66,7 @@ class AuthView extends GetView<AuthController> {
                   splashColor: AppColors.transparent,
                   highlightColor: AppColors.transparent,
                   onTap: (){
+                    goToFinancialAssessment = false;
                     Get.to(()=> ForgotPasswordView());
                   },
                   child: Align(
@@ -121,12 +124,13 @@ class AuthView extends GetView<AuthController> {
                       splashColor: AppColors.transparent,
                       highlightColor: AppColors.transparent,
                         onTap: () {
+                        goToFinancialAssessment = true;
                         Get.to(()=>RegistrationPageView());
                         },
                         child: Text(AppTexts.createAccount, style: AppColors.createAccount,)),
                   ],
                 ),
-                SizedBox(height: height* 0.09,),
+                SizedBox(height: width* 0.22,),
                 Align(
                   alignment: AlignmentDirectional.bottomCenter,
                   child: Text(AppTexts.termsAndServices, textAlign:TextAlign.center,style: AppColors.landingPageTextStyleDescription,),

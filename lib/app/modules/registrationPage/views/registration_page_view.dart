@@ -1,3 +1,4 @@
+import 'package:finance_app/common/app_constants.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
@@ -6,7 +7,6 @@ import '../../../../common/app_images.dart';
 import '../../../../common/app_textField.dart';
 import '../../verificationPage/views/verification_page_view.dart';
 import '../controllers/registration_page_controller.dart';
-import 'package:finance_app/app/modules/forgotPassword/views/forgot_password_view.dart';
 import 'package:finance_app/common/app_background.dart';
 import 'package:finance_app/common/app_buttons.dart';
 import 'package:finance_app/common/app_colors.dart';

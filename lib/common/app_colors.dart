@@ -15,6 +15,7 @@ class AppColors{
   static Color bgTop = Color(0xffFFEDF9);
   static const Color errorLight = Color.fromARGB(255, 196, 32, 32);
   static const Color onErrorLight = Color.fromARGB(255, 245, 39, 39);
+  static const Color onDrag = Color(0xffFA6C12);
 
 
   //gradients
@@ -47,7 +48,6 @@ class AppColors{
   );
   static  TextStyle landingPageTextStyleTitle = GoogleFonts.inter(
     textStyle:  TextStyle(
-      letterSpacing: 1,
       color: AppColors.black,
       fontWeight: FontWeight.w700,
       fontSize: 25,
@@ -55,7 +55,6 @@ class AppColors{
   );
   static  TextStyle landingPageTextStyleDescription = GoogleFonts.poppins(
     textStyle:  TextStyle(
-      letterSpacing: 1,
       color: AppColors.black.withOpacity(0.5),
       fontWeight: FontWeight.w400,
       fontSize: 12,
@@ -86,19 +85,34 @@ class AppColors{
       fontSize: 14,
     )
   );
-  static  TextStyle authentication = GoogleFonts.jost(
+  static  TextStyle authentication = GoogleFonts.poppins(
     textStyle: TextStyle(
 
       color: AppColors.black,
-      fontWeight: FontWeight.w500,
-      fontSize: 25,
+      fontWeight: FontWeight.w600,
+      fontSize: 22,
     )
   );
   //placeHolder
-  static  TextStyle hintTextStyle = GoogleFonts.jost(
+  static  TextStyle hintTextStyle = GoogleFonts.poppins(
     textStyle: TextStyle(
-      color: AppColors.black.withOpacity(0.7),
+      color: AppColors.black.withOpacity(0.9),
       fontWeight: FontWeight.w500,
+      fontSize: 12
+    )
+  );
+  static  TextStyle purposeTextStyle = GoogleFonts.poppins(
+    textStyle: TextStyle(
+      color: AppColors.black,
+      fontWeight: FontWeight.w400,
+      fontSize: 12
+    )
+  );
+  static  TextStyle selectedPurposeTextStyle = GoogleFonts.poppins(
+    textStyle: TextStyle(
+      color: AppColors.black,
+      fontWeight: FontWeight.w600,
+      fontSize: 14
     )
   );
 

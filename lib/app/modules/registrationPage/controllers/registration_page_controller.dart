@@ -1,3 +1,4 @@
+import 'package:finance_app/common/app_constants.dart';
 import 'package:get/get.dart';
 
 class RegistrationPageController extends GetxController {
@@ -6,6 +7,8 @@ class RegistrationPageController extends GetxController {
   final count = 0.obs;
   @override
   void onInit() {
+    goToFinancialAssessment = true;
+    update();
     super.onInit();
   }
 

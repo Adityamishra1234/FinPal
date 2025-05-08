@@ -4,6 +4,8 @@ import '../modules/auth/bindings/auth_binding.dart';
 import '../modules/auth/views/auth_view.dart';
 import '../modules/createNewPassword/bindings/create_new_password_binding.dart';
 import '../modules/createNewPassword/views/create_new_password_view.dart';
+import '../modules/financialAssesment/bindings/financial_assesment_binding.dart';
+import '../modules/financialAssesment/views/financial_assesment_view.dart';
 import '../modules/forgotPassword/bindings/forgot_password_binding.dart';
 import '../modules/forgotPassword/views/forgot_password_view.dart';
 import '../modules/home/bindings/home_binding.dart';
@@ -64,6 +66,11 @@ class AppPages {
       name: _Paths.REGISTRATION_PAGE,
       page: () => const RegistrationPageView(),
       binding: RegistrationPageBinding(),
+    ),
+    GetPage(
+      name: _Paths.FINANCIAL_ASSESSMENT,
+      page: () =>  FinancialAssessmentView(),
+      binding: FinancialAssessmentBinding(),
     ),
   ];
 }
