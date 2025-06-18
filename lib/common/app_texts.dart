@@ -67,10 +67,8 @@ class AppTexts {
 
   //financial assessment
   static const String whatsYourName = "What's your full name?";
-  static const String giveAnswers =
-      "Please give some true answers for\nfollowing questions.";
   static const String enterYourName = "Enter Name";
-  static const String of15 = " of 14";
+  static const String of15 = " of 12";
   static const String skip = "Skip";
   static const String whatsYourPurpose = "What's your app purpose?";
   static const String whatYouDoForLiving = "What do you do for living?";
@@ -126,4 +124,54 @@ class AppTexts {
   static const String iSave = "I Save ${rupee}5000 from my income (${rupee}10000)";
 
   static const List<String> assessmentPurposes = [wantToControl,wantToSave,wantToFinanceAi,wantToTrack,wantToManageSubs,wantToBuildEmergencyFund,wantToTryApp];
+
+  //categories spend on -
+  static const String grocery = "Grocery";
+  static const String entertainment = "Entertainment";
+  static const String utility = "Utility";
+  static const String bill = "Bill";
+  static const String rent = "Rent";
+  static const String subscription = "Subscription";
+  static const String others = "Others";
+  static const List<String> categoryTextList = [grocery,entertainment,utility,bill,rent,subscription,others];
+
+  // outstanding amount
+  static const String howMuchDebt = "I have an outstanding debt of $rupee 1,000";
+
+  //goal in mind
+  static const String payOffDebt = "Pay off debt";
+  static const String growMyMoney = "Grow my money";
+  static const String buildOrGrowSavings = "Build or Grow Savings";
+  static const String homeOwnership = "Home Ownership";
+  static const String reduceSpending = "Reduce Spending";
+  static const String haveOtherGoals = "I have other goals";
+  static const List<String> goalInMindList = [payOffDebt,growMyMoney,buildOrGrowSavings,homeOwnership,reduceSpending,haveOtherGoals];
+
+  //currently track how
+
+  static const String doNotTrack = "I don't track them\nat all";
+  static const String manuallyTrack = "Manually (e.g, spreadsheets)";
+  static const String automaticallyTrack = "Automatically (other app/banks)";
+  static const String preferNotToTrack = "I prefer not to\ntrack them";
+  static const List<String> currentTrackList = [doNotTrack,manuallyTrack,automaticallyTrack,preferNotToTrack];
+
+  //age retirement
+
+  static const String selectedAge = "I want to retire at the age of";
+
+  //current situation feeling
+
+  static const String veryHappy = "I feel very happy";
+  static const String somewhatHappy= "I feel somewhat happy";
+  static const String neutral = "I feel neutral";
+  static const String lessHappy = "I feel less happy";
+  static const String unHappy = "I feel unhappy";
+  static const List<String> situationFeelingList = [veryHappy,somewhatHappy,neutral,lessHappy,unHappy ];
+
+  //have funds
+  static const String whatIsEmergencyFund = "An emergency  fund is a cash reserve that's\nspecially set aside for unplanned expenses or financial emergencies.";
+  static const String giveAnswers = "Please give some true answers for\nfollowing questions.";
+
+  static const List<String> showStaticOrDynamic = [whatIsEmergencyFund,giveAnswers];
+
 }

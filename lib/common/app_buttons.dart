@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'app_colors.dart';
 
 class CustomButton extends StatefulWidget {
-  final LinearGradient gradient;
+  final LinearGradient? gradient;
   final BorderRadius? borderRadius;
   final BoxShadow? boxShadow;
   final Color? color,iconColor;
@@ -13,7 +13,7 @@ class CustomButton extends StatefulWidget {
   final TextAlign? textAlign;
   final IconData? icon;
   final dynamic onTap;
-  const CustomButton({super.key, required this.gradient, this.borderRadius, this.boxShadow, this.color, this.height, this.width, required this.buttonText, this.buttonTextSize, this.buttonFontWeight,this.textAlign, this.icon, this.iconColor, this.onTap});
+  const CustomButton({super.key,  this.gradient, this.borderRadius, this.boxShadow, this.color, this.height, this.width, required this.buttonText, this.buttonTextSize, this.buttonFontWeight,this.textAlign, this.icon, this.iconColor, this.onTap});
 
   @override
   State<CustomButton> createState() => _CustomButtonState();
@@ -32,11 +32,9 @@ class _CustomButtonState extends State<CustomButton> {
         height: widget.height ?? 10,
         width: widget.width ?? 100,
         decoration: BoxDecoration(
-          gradient: widget.gradient,
+          gradient: widget.gradient ?? null,
           borderRadius: widget.borderRadius ?? BorderRadius.circular(10),
           boxShadow: [widget.boxShadow ?? BoxShadow()],
-
-
         ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,

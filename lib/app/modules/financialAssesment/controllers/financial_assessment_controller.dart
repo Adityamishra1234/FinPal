@@ -9,7 +9,15 @@ class FinancialAssessmentController extends GetxController {
   RxInt? current = RxInt(-1);
   final QuillController quillController = QuillController.basic();
   RxInt charCount = 0.obs;
-
+  //for categories.
+  RxInt? currentIndexForCategories = 0.obs;
+  RxList currentIndexForCategoriesList = [].obs;
+  //for goal in mind
+  RxList goals = [].obs;
+  //track
+  RxInt? track = RxInt(-1);
+  //feeling situation
+  RxInt? feelingSituation = RxInt(-1);
   @override
   void onInit() {
     quillController.addListener(() {
@@ -30,7 +38,7 @@ class FinancialAssessmentController extends GetxController {
   }
 
   void increment(){
-    if(count.value < 14){
+    if(count.value < 12){
       count.value++;
     }
   }

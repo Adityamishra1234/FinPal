@@ -16,6 +16,7 @@ class AppColors{
   static const Color errorLight = Color.fromARGB(255, 196, 32, 32);
   static const Color onErrorLight = Color.fromARGB(255, 245, 39, 39);
   static const Color onDrag = Color(0xffFA6C12);
+  static const Color categoriesContainer = Color(0x809A9A9A);
 
 
   //gradients
@@ -35,9 +36,26 @@ class AppColors{
     // begin: ,
     // end:
   );
-
-
-  //textStyles
+  static LinearGradient transparentGradient = LinearGradient(
+      colors: [
+        AppColors.white.withOpacity(0.75),
+        AppColors.white.withOpacity(0.97)
+      ],
+      begin: Alignment.bottomCenter,
+      end: Alignment.topCenter
+    //   begin: Alignment.topCenter,
+    // end: Alignment.bottomCenter
+  );
+  static LinearGradient transparentGradient_emergencyFund = LinearGradient(
+      colors: [
+        AppColors.white.withOpacity(0.75),
+        AppColors.white.withOpacity(0.97)
+      ],
+      begin: Alignment.bottomLeft,
+      end: Alignment.bottomRight
+    //   begin: Alignment.topCenter,
+    // end: Alignment.bottomCenter
+  );
   static  TextStyle textStyle = GoogleFonts.poppins(
     textStyle:  TextStyle(
       letterSpacing: 1,

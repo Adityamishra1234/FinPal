@@ -24,4 +24,33 @@ class AppImages{
   //password success
  static const String resetSuccess = "assets/images/passwordResetSuccess.png";
 
+ //categories images
+  static const String grocery = "assets/images/grocery.png";
+  static const String entertainment = "assets/images/entertainment.png";
+  static const String utility = "assets/images/utility.png";
+  static const String bill = "assets/images/bill.png";
+  static const String rent = "assets/images/rent.png";
+  static const String subscription = "assets/images/subscription.png";
+  static const String others = "assets/images/others.png";
+  static const List<String> categoryImageList = [grocery,entertainment,utility,bill,rent,subscription,others];
+
+  //current track
+  static const String doNotTrack = "assets/images/doNotTrack.png";
+  static const String manuallyTrack = "assets/images/manuallyTrack.png";
+  static const String automaticallyTrack = "assets/images/automaticallyTrack.png";
+  static const String preferNotToTrack = "assets/images/preferNotToTrack.png";
+  static const List<String> currentTrackImageList = [doNotTrack,manuallyTrack,automaticallyTrack,preferNotToTrack];
+
+  //current situation feeling
+
+  static const String veryHappy = "assets/images/Very Happy.png";
+  static const String somewhatHappy= "assets/images/Happy.png";
+  static const String neutral = "assets/images/Neutral.png";
+  static const String lessHappy = "assets/images/Less Happy.png";
+  static const String unHappy = "assets/images/unhappy.png";
+  static const List<String> situationFeelingImageList = [veryHappy,somewhatHappy,neutral,lessHappy,unHappy ];
+
+  //have funds?
+
+  static const String haveFunds = "assets/images/haveFunds?.png";
 }

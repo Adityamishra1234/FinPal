@@ -25,16 +25,13 @@ class FinancialAssessmentView extends GetView<FinancialAssessmentController> {
       AssessmentFragment3(height:height,width: width,context: context,),
       AssessmentFragment4(height:height,width: width,context: context,),
       AssessmentFragment5(height:height,width: width,context: context,),
-      AssessmentFragment6(),
-      AssessmentFragment7(),
+      AssessmentFragment6(height:height,width: width,context: context,),
+      AssessmentFragment7(height:height,width: width,context: context,),
       AssessmentFragment8(),
       AssessmentFragment9(),
       AssessmentFragment10(),
-      AssessmentFragment11(),
-      AssessmentFragment12(),
-      AssessmentFragment13(),
-      AssessmentFragment14(),
-      AssessmentFragment15(),
+      AssessmentFragment11(height:height,width: width,context: context,),
+      AssessmentFragment12(height:height,width: width,context: context,),
     ];
     return Scaffold(
       resizeToAvoidBottomInset: false,
@@ -64,7 +61,7 @@ class FinancialAssessmentView extends GetView<FinancialAssessmentController> {
                     const SizedBox(width: 10,),
                     Obx(()=> Expanded(
                      child: LinearProgressBar(
-                       maxSteps: 14,
+                       maxSteps: 12,
                        progressType: LinearProgressBar.progressTypeLinear,
                        currentStep: controller.count.value,
                        minHeight: 4,
@@ -90,10 +87,9 @@ class FinancialAssessmentView extends GetView<FinancialAssessmentController> {
                 SizedBox(height: height* 0.03,),
                 Obx(()=>Text(AppTexts.assessmentTitleTexts[controller.count.value - 1], textAlign:TextAlign.center,style: AppColors.landingPageTextStyleTitle,),),
                 SizedBox(height: height* 0.02,),
-                Text(AppTexts.giveAnswers, textAlign: TextAlign.center,style: AppColors.landingPageTextStyleDescription,),
-                SizedBox(height: height* 0.06,),
+                Obx(()=> Text(controller.count.value == 12? AppTexts.whatIsEmergencyFund: AppTexts.giveAnswers, textAlign: TextAlign.center,style: AppColors.landingPageTextStyleDescription,),),                SizedBox(height: height* 0.06,),
                 //update this
-               Obx(()=> Expanded(
+                Obx(()=> Expanded(
                    child: pages[controller.count.value - 1]
                ),),
 
