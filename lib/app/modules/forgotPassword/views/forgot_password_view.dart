@@ -39,7 +39,6 @@ class ForgotPasswordView extends GetView<ForgotPasswordController> {
                   inputFormatters: [
                     FilteringTextInputFormatter.digitsOnly,
                   ],
-                  fillColor: AppColors.white,
                   cursorColor: AppColors.primaryColor,
                   borderRadius: 14,
                   contentPadding: const EdgeInsets.symmetric(vertical: 15, horizontal: 10),

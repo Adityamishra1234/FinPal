@@ -5,6 +5,7 @@ class AppColors{
 
   //colors
   static Color primaryColor = Color(0xffF06005);
+  static Color textColor = const Color(0xFF677082);
   static Color pinkColor = Color(0xffFF77D7);
   static Color black = Colors.black;
   static Color white = Colors.white;
@@ -19,6 +20,13 @@ class AppColors{
   static const Color categoriesContainer = Color(0x809A9A9A);
 
 
+
+  //textFields
+  static TextStyle montserratTextStyleSmall = GoogleFonts.montserrat(
+    color: Colors.black,
+    fontSize: 12,
+    fontWeight: FontWeight.w500,
+  );
   //gradients
   static LinearGradient commonButtonGradient = LinearGradient(
       colors: [

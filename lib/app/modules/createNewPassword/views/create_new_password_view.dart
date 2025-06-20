@@ -37,7 +37,7 @@ class CreateNewPasswordView extends GetView<CreateNewPasswordController> {
                 Text(AppTexts.createNewPasswordDetail, textAlign: TextAlign.center, style: AppColors.landingPageTextStyleDescription,),
                 SizedBox(height: height* 0.1,),
                 CustomTextField(
-                  fillColor: AppColors.white,
+
                   cursorColor: AppColors.primaryColor,
                   borderRadius: 14,
                   contentPadding: const EdgeInsets.symmetric(vertical: 15, horizontal: 10),
@@ -48,7 +48,6 @@ class CreateNewPasswordView extends GetView<CreateNewPasswordController> {
                 SizedBox(height: height* 0.03,),
                 CustomTextField(
 
-                  fillColor: AppColors.white,
                   cursorColor: AppColors.primaryColor,
                   borderRadius: 14,
                   contentPadding: const EdgeInsets.symmetric(vertical: 15, horizontal: 10),

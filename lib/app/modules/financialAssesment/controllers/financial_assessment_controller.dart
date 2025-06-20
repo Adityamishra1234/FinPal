@@ -42,4 +42,10 @@ class FinancialAssessmentController extends GetxController {
       count.value++;
     }
   }
+
+  void decrement(){
+    if(count.value > 1){
+      count.value--;
+    }
+  }
 }

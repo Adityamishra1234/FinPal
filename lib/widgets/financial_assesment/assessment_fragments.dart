@@ -28,7 +28,6 @@ class _AssessmentFragment1State extends State<AssessmentFragment1> {
     return ListView(
       children: [
         CustomTextField(
-          fillColor: AppColors.white,
           cursorColor: AppColors.primaryColor,
           borderRadius: 14,
           contentPadding: const EdgeInsets.symmetric(vertical: 15, horizontal: 10),

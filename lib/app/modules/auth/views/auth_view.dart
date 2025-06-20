@@ -36,14 +36,12 @@ class AuthView extends GetView<AuthController> {
                 Text(AppTexts.pleaseLoginToContinue, style: AppColors.landingPageTextStyleDescription,),
                 SizedBox(height: height* 0.08,),
                 CustomTextField(
-
                   keyboardType: TextInputType.phone,
                   inputFormatters: [
                     FilteringTextInputFormatter.digitsOnly,
                   ],
-                  fillColor: AppColors.white,
-                  cursorColor: AppColors.primaryColor,
-                  borderRadius: 14,
+                  borderRadius: 12,
+                  // borderRadius: 14,
                   contentPadding: const EdgeInsets.symmetric(vertical: 15, horizontal: 10),
                   hintText: AppTexts.enterPhone,
                   hintTextStyle: AppColors.hintTextStyle,
@@ -51,15 +49,14 @@ class AuthView extends GetView<AuthController> {
                 ),
                 SizedBox(height: height* 0.03,),
                 CustomTextField(
-                  fillColor: AppColors.white,
                   cursorColor: AppColors.primaryColor,
                   borderRadius: 14,
                   contentPadding: const EdgeInsets.symmetric(vertical: 15, horizontal: 10),
                   hintText: AppTexts.enterPassword,
                   hintTextStyle: AppColors.hintTextStyle,
-                  obscureText: true,
+                  obscureText: false,
                   // suffix: Icon(Icons.remove_red_eye, color: AppColors.black.withOpacity(0.7),size: 18,),
-                  prefixIcon: Icon(Icons.key, color: AppColors.primaryColor,),
+                  prefixIcon: Icon(Icons.key, color: AppColors.primaryColor,), controller: null,
                 ),
                 SizedBox(height: height* 0.02,),
                 InkWell(

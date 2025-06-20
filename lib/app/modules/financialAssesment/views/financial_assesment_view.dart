@@ -43,23 +43,20 @@ class FinancialAssessmentView extends GetView<FinancialAssessmentController> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 SizedBox(height: height* 0.004,),
-                Row(
-                  children: [
-                    GestureDetector(
-                      onTap: () => Get.back(),
-                      child: Container(
-                        alignment: Alignment.center,
-                        decoration: BoxDecoration(
-                          color: Colors.grey.withOpacity(0.2),
-                          borderRadius: BorderRadius.circular(12),
-                        ),
-                        child: BackButton(
-                          onPressed: ()=> Get.back(),
-                        ),
-                      ),
-                    ),
-                    const SizedBox(width: 10,),
-                    Obx(()=> Expanded(
+               Obx(()=> Row(
+                 children: [
+                   if(controller.count.value>1)...[Container(
+                     alignment: Alignment.center,
+                     decoration: BoxDecoration(
+                       color: Colors.grey.withOpacity(0.2),
+                       borderRadius: BorderRadius.circular(12),
+                     ),
+                     child: BackButton(
+                       onPressed: ()=> controller.decrement(),
+                     ),
+                   ),],
+                   const SizedBox(width: 10,),
+                   Obx(()=> Expanded(
                      child: LinearProgressBar(
                        maxSteps: 12,
                        progressType: LinearProgressBar.progressTypeLinear,
@@ -70,12 +67,12 @@ class FinancialAssessmentView extends GetView<FinancialAssessmentController> {
                        borderRadius: BorderRadius.circular(10),
                      ),
                    ),),
-                    const SizedBox(width: 10,),
-                    Text(AppTexts.skip, style: AppColors.createAccount,),
-                    SizedBox(height: height* 0.1,),
+                   const SizedBox(width: 10,),
+                   Text(AppTexts.skip, style: AppColors.createAccount,),
+                   SizedBox(height: height* 0.1,),
 
-                  ],
-                ),
+                 ],
+               ),),
                 SizedBox(height: height* 0.04,),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,

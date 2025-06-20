@@ -39,7 +39,7 @@ class RegistrationPageView extends GetView<RegistrationPageController> {
                   inputFormatters: [
                     FilteringTextInputFormatter.digitsOnly,
                   ],
-                  fillColor: AppColors.white,
+
                   cursorColor: AppColors.primaryColor,
                   borderRadius: 14,
                   contentPadding: const EdgeInsets.symmetric(vertical: 15, horizontal: 10),
@@ -49,7 +49,7 @@ class RegistrationPageView extends GetView<RegistrationPageController> {
                 ),
                 SizedBox(height: height* 0.03,),
                 CustomTextField(
-                  fillColor: AppColors.white,
+
                   cursorColor: AppColors.primaryColor,
                   borderRadius: 14,
                   contentPadding: const EdgeInsets.symmetric(vertical: 15, horizontal: 10),
@@ -61,7 +61,7 @@ class RegistrationPageView extends GetView<RegistrationPageController> {
                 ),
                 SizedBox(height: height* 0.03,),
                 CustomTextField(
-                  fillColor: AppColors.white,
+
                   cursorColor: AppColors.primaryColor,
                   borderRadius: 14,
                   contentPadding: const EdgeInsets.symmetric(vertical: 15, horizontal: 10),
