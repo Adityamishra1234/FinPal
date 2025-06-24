@@ -158,6 +158,15 @@ class AppColors{
       fontSize: 14,
     )
   );
+  static  TextStyle markRead = GoogleFonts.jost(
+    textStyle: TextStyle(
+      decoration: TextDecoration.underline,
+      decorationColor: primaryColor,
+      color: AppColors.primaryColor,
+      fontWeight: FontWeight.w500,
+      fontSize: 12,
+    )
+  );
   static  TextStyle authentication = GoogleFonts.poppins(
     textStyle: TextStyle(
 

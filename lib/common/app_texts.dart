@@ -213,6 +213,15 @@ class AppTexts {
  //transactions
  static const String lastTransactions = "Last Transactions";
 
+ //notification screen
+ static const String notificationTitle = "Notifications";
+ static const String markAllRead = "Mark all read";
+
+ //transfer to
+  static const String transfer = "Transfer";
+  static const String transferTo = "Transfer to";
+  static const String recentTransfer = "Recent Transfer";
+
 
 
 

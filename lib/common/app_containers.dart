@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 
 import 'app_colors.dart';
 
@@ -35,6 +37,19 @@ BoxShadow commonBoxShadow({
     spreadRadius: spreadRadius,
     blurRadius: blurRadius,
     offset: offset,
+  );
+}
+
+Widget customBackButton() {
+  return Container(
+    alignment: Alignment.center,
+    decoration: BoxDecoration(
+      color: Colors.grey.withOpacity(0.2),
+      borderRadius: BorderRadius.circular(12),
+    ),
+    child: BackButton(
+      onPressed: ()=> Get.back(),
+    ),
   );
 }
 

@@ -14,6 +14,8 @@ abstract class Routes {
   static const FINANCIAL_ASSESSMENT = _Paths.FINANCIAL_ASSESSMENT;
   static const PROFILE_SETUP = _Paths.PROFILE_SETUP;
   static const NAVBAR = _Paths.NAVBAR;
+  static const NOTIFICATION_SCREEN = _Paths.NOTIFICATION_SCREEN;
+  static const TRANSFER_TO = _Paths.TRANSFER_TO;
 }
 
 abstract class _Paths {
@@ -29,4 +31,6 @@ abstract class _Paths {
   static const FINANCIAL_ASSESSMENT = '/financial-assessment';
   static const PROFILE_SETUP = '/profile-setup';
   static const NAVBAR = '/nav-bar';
+  static const NOTIFICATION_SCREEN = '/notification-screen';
+  static const TRANSFER_TO = '/transfer-to';
 }

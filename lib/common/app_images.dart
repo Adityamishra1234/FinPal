@@ -75,4 +75,7 @@ class AppImages{
  //home page images
 
  static const String localBankImage = "assets/images/bank.png";
+
+ //transfer to
+ static const String bankImage = "assets/images/transfer_bank.png";
 }

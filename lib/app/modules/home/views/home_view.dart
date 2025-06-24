@@ -1,3 +1,4 @@
+import 'package:finance_app/app/modules/notification_screen/views/notification_screen_view.dart';
 import 'package:finance_app/common/app_background.dart';
 import 'package:finance_app/common/app_buttons.dart';
 import 'package:finance_app/common/app_colors.dart';
@@ -9,6 +10,7 @@ import 'package:get/get.dart';
 
 import '../../../../common/app_images.dart';
 import '../../../../widgets/no_data_widget.dart';
+import '../../transfer_to/views/transfer_to_view.dart';
 import '../controllers/home_controller.dart';
 
 class HomeView extends GetView<HomeController> {
@@ -32,9 +34,12 @@ class HomeView extends GetView<HomeController> {
                   style: TextStyle(color: Colors.white, fontSize: 12),
                 ),
                 alignment: Alignment.topRight,
-                child: Image.asset(
-                  AppImages.notificationImage,
-                  height: 40,
+                child: GestureDetector(
+                  onTap: ()=> Get.to(()=> NotificationScreenView()),
+                  child: Image.asset(
+                    AppImages.notificationImage,
+                    height: 40,
+                  ),
                 ),
               ),
 
@@ -137,6 +142,7 @@ class HomeView extends GetView<HomeController> {
                                   color: AppColors.black,
                                   iconColor: AppColors.black,
                                   icon: Icons.file_upload_outlined, buttonText: 'Transfer',
+                                  onTap: ()=> Get.to(()=> TransferToView()),
                                 ),
                               )
                             ],

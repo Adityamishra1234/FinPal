@@ -1,6 +1,6 @@
-import 'package:finance_app/widgets/custom_bottom_nav_bar.dart';
 import 'package:get/get.dart';
 
+import '../../widgets/custom_bottom_nav_bar.dart';
 import '../modules/auth/bindings/auth_binding.dart';
 import '../modules/auth/views/auth_view.dart';
 import '../modules/createNewPassword/bindings/create_new_password_binding.dart';
@@ -13,12 +13,16 @@ import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/landingPage/bindings/landing_page_binding.dart';
 import '../modules/landingPage/views/landing_page_view.dart';
+import '../modules/notification_screen/bindings/notification_screen_binding.dart';
+import '../modules/notification_screen/views/notification_screen_view.dart';
 import '../modules/profile_setup/bindings/profile_setup_binding.dart';
 import '../modules/profile_setup/views/profile_setup_view.dart';
 import '../modules/registrationPage/bindings/registration_page_binding.dart';
 import '../modules/registrationPage/views/registration_page_view.dart';
 import '../modules/splash/bindings/splash_binding.dart';
 import '../modules/splash/views/splash_view.dart';
+import '../modules/transfer_to/bindings/transfer_to_binding.dart';
+import '../modules/transfer_to/views/transfer_to_view.dart';
 import '../modules/verificationPage/bindings/verification_page_binding.dart';
 import '../modules/verificationPage/views/verification_page_view.dart';
 
@@ -27,8 +31,8 @@ part 'app_routes.dart';
 class AppPages {
   AppPages._();
 
-  static const INITIAL = Routes.SPLASH;
-  // static const INITIAL = Routes.NAVBAR;
+  // static const INITIAL = Routes.SPLASH;
+  static const INITIAL = Routes.NAVBAR;
 
   static final routes = [
     GetPage(
@@ -83,8 +87,18 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.PROFILE_SETUP,
-      page: () =>  ProfileSetupView(),
+      page: () => ProfileSetupView(),
       binding: ProfileSetupBinding(),
+    ),
+    GetPage(
+      name: _Paths.NOTIFICATION_SCREEN,
+      page: () => const NotificationScreenView(),
+      binding: NotificationScreenBinding(),
+    ),
+    GetPage(
+      name: _Paths.TRANSFER_TO,
+      page: () => const TransferToView(),
+      binding: TransferToBinding(),
     ),
   ];
 }
