@@ -1,3 +1,4 @@
+import 'package:finance_app/widgets/custom_bottom_nav_bar.dart';
 import 'package:get/get.dart';
 
 import '../modules/auth/bindings/auth_binding.dart';
@@ -12,6 +13,8 @@ import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/landingPage/bindings/landing_page_binding.dart';
 import '../modules/landingPage/views/landing_page_view.dart';
+import '../modules/profile_setup/bindings/profile_setup_binding.dart';
+import '../modules/profile_setup/views/profile_setup_view.dart';
 import '../modules/registrationPage/bindings/registration_page_binding.dart';
 import '../modules/registrationPage/views/registration_page_view.dart';
 import '../modules/splash/bindings/splash_binding.dart';
@@ -25,8 +28,14 @@ class AppPages {
   AppPages._();
 
   static const INITIAL = Routes.SPLASH;
+  // static const INITIAL = Routes.NAVBAR;
 
   static final routes = [
+    GetPage(
+      name: _Paths.NAVBAR,
+      page: () => CustomBottomNavBar(),
+      binding: HomeBinding(),
+    ),
     GetPage(
       name: _Paths.HOME,
       page: () => const HomeView(),
@@ -69,8 +78,13 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.FINANCIAL_ASSESSMENT,
-      page: () =>  FinancialAssessmentView(),
+      page: () => FinancialAssessmentView(),
       binding: FinancialAssessmentBinding(),
+    ),
+    GetPage(
+      name: _Paths.PROFILE_SETUP,
+      page: () =>  ProfileSetupView(),
+      binding: ProfileSetupBinding(),
     ),
   ];
 }

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'app_colors.dart';
+
 class AppContainers extends StatelessWidget {
   final double? borderRadius, height, width;
   final LinearGradient gradient;
@@ -19,3 +21,20 @@ class AppContainers extends StatelessWidget {
     );
   }
 }
+
+
+
+BoxShadow commonBoxShadow({
+  Color color =  Colors.black12,
+  double spreadRadius = 0.2, //0.2
+  double blurRadius = 1, //0.7
+  Offset offset = const  Offset(0, 0),
+}) {
+  return BoxShadow(
+    color: color,
+    spreadRadius: spreadRadius,
+    blurRadius: blurRadius,
+    offset: offset,
+  );
+}
+

@@ -900,11 +900,12 @@ class _AssessmentFragment12State extends State<AssessmentFragment12> {
   @override
   Widget build(BuildContext context) {
     return Column(
-     mainAxisSize: MainAxisSize.min,
+     // mainAxisSize: MainAxisSize.min,
       children: [
         // Text(AppTexts.whatIsEmergencyFund, textAlign:TextAlign.center,style: AppColors.hintTextStyle,),
-        Spacer(),
-        Image.asset(AppImages.haveFunds, scale:3.6, filterQuality: FilterQuality.high),
+        Expanded(
+          flex: 8,
+            child: Image.asset(AppImages.haveFunds, scale:3.6, filterQuality: FilterQuality.high)),
         Spacer(),
         Padding(
           padding:  EdgeInsets.symmetric(horizontal: 50),

@@ -53,4 +53,26 @@ class AppImages{
   //have funds?
 
   static const String haveFunds = "assets/images/haveFunds?.png";
+
+
+  //profile setup
+
+ static const String profileSetupUpload = "assets/images/profile_setup.png";
+ static const String profileSetupUploadCircular = "assets/images/circular_profile_setup.png";
+ static const String failedToUpload = "assets/images/failedToUpload.gif";
+ static const String notificationImage = "assets/images/notification.png";
+ static const String noGoalImage = "assets/images/failedToUpload.png";
+
+ //nav bar images
+ static List<String> navBarImages = [
+   'assets/images/home.png',
+   'assets/images/goals.png',
+   'assets/images/scan.png',
+   'assets/images/analytics.png',
+   'assets/images/profile.png',
+ ];
+
+ //home page images
+
+ static const String localBankImage = "assets/images/bank.png";
 }

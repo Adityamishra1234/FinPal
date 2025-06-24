@@ -174,4 +174,46 @@ class AppTexts {
 
   static const List<String> showStaticOrDynamic = [whatIsEmergencyFund,giveAnswers];
 
+  //profile setup
+  static const String profileSetup = "Profile Setup";
+  static const String skipStep = "Skip this step";
+  static const String setupPic = "Let's setup your profile photo";
+  static const String uploadingPhoto = "Uploading Photo";
+  static const String uploadFileName = "profile_photo_aditya_mishra.jpeg";
+  static const String failedToUpload = "Profile failed to upload";
+  static const String ensureFormat = "Please ensure format is .jpg or .png and maximum size is 10MB";
+
+  //nav bar texts
+  static List<String> navBarTexts = [
+    'Home',
+    'Goal',
+    'QR Pay',
+    'Analytics',
+    'Profile',
+  ];
+
+  //homepage texts
+
+ static const String name = "Aditya Mishra";
+ static const String email = "meaditya847@gmail.com";
+ static const String totalFreeBal = "Total Free Balance";
+
+ //bank name
+ static const String bankName = "Airtel Payments Bank";
+ static const String secondBankName = "Federal Bank";
+ static const String bankAccountNumber = "********4434";
+ static const String lastUpdated = "Last updated 5m ago";
+ static const String syncNow = "Sync Now";
+ static const String goals = "Goals";
+ static const String readySaving = "Ready to start saving?";
+ static const String notSetGoal = "You haven't set any saving goal yet!";
+
+ //analytics
+ static const String generalAnalytics = "General Analytics";
+ //transactions
+ static const String lastTransactions = "Last Transactions";
+
+
+
+
 }

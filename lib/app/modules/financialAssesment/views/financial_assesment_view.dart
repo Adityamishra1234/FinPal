@@ -1,3 +1,4 @@
+import 'package:finance_app/app/modules/profile_setup/views/profile_setup_view.dart';
 import 'package:finance_app/common/app_background.dart';
 import 'package:finance_app/common/app_buttons.dart';
 import 'package:finance_app/common/app_colors.dart';
@@ -5,14 +6,13 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 
-import '../../../../common/app_textField.dart';
 import '../../../../common/app_texts.dart';
 import '../../../../widgets/financial_assesment/assessment_fragments.dart';
 import '../controllers/financial_assessment_controller.dart';
 import 'package:linear_progress_bar/linear_progress_bar.dart';
 
 class FinancialAssessmentView extends GetView<FinancialAssessmentController> {
-   FinancialAssessmentView({super.key});
+  FinancialAssessmentView({super.key});
 
   var controller = Get.put(FinancialAssessmentController());
   @override
@@ -43,7 +43,7 @@ class FinancialAssessmentView extends GetView<FinancialAssessmentController> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 SizedBox(height: height* 0.004,),
-               Obx(()=> Row(
+                Obx(()=> Row(
                  children: [
                    if(controller.count.value>1)...[Container(
                      alignment: Alignment.center,
@@ -91,7 +91,7 @@ class FinancialAssessmentView extends GetView<FinancialAssessmentController> {
                ),),
 
 
-                CustomButton(
+                Obx(()=> CustomButton(
                   buttonTextSize: 13,
                   width: width,
                   height: 60,
@@ -101,9 +101,9 @@ class FinancialAssessmentView extends GetView<FinancialAssessmentController> {
                   color: AppColors.white,
                   iconColor: AppColors.white,
                   icon: Icons.arrow_circle_right_rounded,
-                  buttonText: "Next",
-                  onTap: () => controller.increment(),
-                ),
+                  buttonText: controller.count.value == 12? "Yes, I do":"Next",
+                  onTap: () => controller.count.value == 12 ? Get.to(()=>ProfileSetupView()):controller.increment(),
+                ),)
 
               ],
             ),

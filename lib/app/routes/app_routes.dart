@@ -12,6 +12,8 @@ abstract class Routes {
   static const CREATE_NEW_PASSWORD = _Paths.CREATE_NEW_PASSWORD;
   static const REGISTRATION_PAGE = _Paths.REGISTRATION_PAGE;
   static const FINANCIAL_ASSESSMENT = _Paths.FINANCIAL_ASSESSMENT;
+  static const PROFILE_SETUP = _Paths.PROFILE_SETUP;
+  static const NAVBAR = _Paths.NAVBAR;
 }
 
 abstract class _Paths {
@@ -25,4 +27,6 @@ abstract class _Paths {
   static const CREATE_NEW_PASSWORD = '/create-new-password';
   static const REGISTRATION_PAGE = '/registration-page';
   static const FINANCIAL_ASSESSMENT = '/financial-assessment';
+  static const PROFILE_SETUP = '/profile-setup';
+  static const NAVBAR = '/nav-bar';
 }
