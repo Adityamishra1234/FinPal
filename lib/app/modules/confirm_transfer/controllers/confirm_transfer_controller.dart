@@ -1,10 +1,9 @@
 import 'package:get/get.dart';
 
-class TransferToController extends GetxController {
-  //TODO: Implement TransferToController
+class ConfirmTransferController extends GetxController {
+  //TODO: Implement ConfirmTransferController
 
   final count = 0.obs;
-  RxBool addedBank = false.obs;
   @override
   void onInit() {
     super.onInit();

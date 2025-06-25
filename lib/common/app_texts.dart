@@ -221,6 +221,12 @@ class AppTexts {
   static const String transfer = "Transfer";
   static const String transferTo = "Transfer to";
   static const String recentTransfer = "Recent Transfer";
+  static const String transferFrom = "Transfer From";
+  static const String transferAmount = "Transfer Amount";
+  static const String change = "Change";
+  static const String masterCard = "Master Card";
+  static const String masterCardAmount = "Balance - $rupee 1,00,000";
+  static const String confirmTransfer = "Confirm Transfer";
 
 
 

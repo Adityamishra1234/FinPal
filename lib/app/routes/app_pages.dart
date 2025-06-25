@@ -3,6 +3,8 @@ import 'package:get/get.dart';
 import '../../widgets/custom_bottom_nav_bar.dart';
 import '../modules/auth/bindings/auth_binding.dart';
 import '../modules/auth/views/auth_view.dart';
+import '../modules/confirm_transfer/bindings/confirm_transfer_binding.dart';
+import '../modules/confirm_transfer/views/confirm_transfer_view.dart';
 import '../modules/createNewPassword/bindings/create_new_password_binding.dart';
 import '../modules/createNewPassword/views/create_new_password_view.dart';
 import '../modules/financialAssesment/bindings/financial_assesment_binding.dart';
@@ -97,8 +99,13 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.TRANSFER_TO,
-      page: () => const TransferToView(),
+      page: () => TransferToView(),
       binding: TransferToBinding(),
+    ),
+    GetPage(
+      name: _Paths.CONFIRM_TRANSFER,
+      page: () => const ConfirmTransferView(),
+      binding: ConfirmTransferBinding(),
     ),
   ];
 }

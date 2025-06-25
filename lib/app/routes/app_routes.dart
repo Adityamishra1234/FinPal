@@ -16,6 +16,7 @@ abstract class Routes {
   static const NAVBAR = _Paths.NAVBAR;
   static const NOTIFICATION_SCREEN = _Paths.NOTIFICATION_SCREEN;
   static const TRANSFER_TO = _Paths.TRANSFER_TO;
+  static const CONFIRM_TRANSFER = _Paths.CONFIRM_TRANSFER;
 }
 
 abstract class _Paths {
@@ -33,4 +34,5 @@ abstract class _Paths {
   static const NAVBAR = '/nav-bar';
   static const NOTIFICATION_SCREEN = '/notification-screen';
   static const TRANSFER_TO = '/transfer-to';
+  static const CONFIRM_TRANSFER = '/confirm-transfer';
 }
