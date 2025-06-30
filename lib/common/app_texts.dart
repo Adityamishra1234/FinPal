@@ -227,6 +227,8 @@ class AppTexts {
   static const String masterCard = "Master Card";
   static const String masterCardAmount = "Balance - $rupee 1,00,000";
   static const String confirmTransfer = "Confirm Transfer";
+  static const String enterYouAccountPin = "Enter your Account PIN";
+  static const String securityReasons = "For security reasons, please enter you PIN to confirm your transaction.";
 
 
 

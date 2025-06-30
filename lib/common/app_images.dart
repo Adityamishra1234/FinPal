@@ -79,4 +79,5 @@ class AppImages{
  //transfer to
  static const String bankImage = "assets/images/transfer_bank.png";
  static const String masterCard = "assets/images/master_card.png";
+ static const String accountPin = "assets/images/account_pin.png";
 }

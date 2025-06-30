@@ -104,7 +104,7 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.CONFIRM_TRANSFER,
-      page: () => const ConfirmTransferView(),
+      page: () =>  ConfirmTransferView(),
       binding: ConfirmTransferBinding(),
     ),
   ];
