@@ -17,6 +17,7 @@ abstract class Routes {
   static const NOTIFICATION_SCREEN = _Paths.NOTIFICATION_SCREEN;
   static const TRANSFER_TO = _Paths.TRANSFER_TO;
   static const CONFIRM_TRANSFER = _Paths.CONFIRM_TRANSFER;
+  static const LINK_NEW_BANK = _Paths.LINK_NEW_BANK;
 }
 
 abstract class _Paths {
@@ -35,4 +36,5 @@ abstract class _Paths {
   static const NOTIFICATION_SCREEN = '/notification-screen';
   static const TRANSFER_TO = '/transfer-to';
   static const CONFIRM_TRANSFER = '/confirm-transfer';
+  static const LINK_NEW_BANK = '/link-new-bank';
 }

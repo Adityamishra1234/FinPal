@@ -15,6 +15,8 @@ import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/landingPage/bindings/landing_page_binding.dart';
 import '../modules/landingPage/views/landing_page_view.dart';
+import '../modules/link_new_bank/bindings/link_new_bank_binding.dart';
+import '../modules/link_new_bank/views/link_new_bank_view.dart';
 import '../modules/notification_screen/bindings/notification_screen_binding.dart';
 import '../modules/notification_screen/views/notification_screen_view.dart';
 import '../modules/profile_setup/bindings/profile_setup_binding.dart';
@@ -104,8 +106,13 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.CONFIRM_TRANSFER,
-      page: () =>  ConfirmTransferView(),
+      page: () => ConfirmTransferView(),
       binding: ConfirmTransferBinding(),
+    ),
+    GetPage(
+      name: _Paths.LINK_NEW_BANK,
+      page: () => LinkNewBankView(),
+      binding: LinkNewBankBinding(),
     ),
   ];
 }

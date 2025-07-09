@@ -80,4 +80,8 @@ class AppImages{
  static const String bankImage = "assets/images/transfer_bank.png";
  static const String masterCard = "assets/images/master_card.png";
  static const String accountPin = "assets/images/account_pin.png";
+
+ //link new bank
+
+ static const String linkUp = "assets/images/link_bank_account.png";
 }

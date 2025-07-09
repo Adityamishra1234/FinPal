@@ -3,8 +3,6 @@ import 'package:finance_app/common/app_images.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
-import 'package:pinput/pinput.dart';
-
 import '../../../../common/app_colors.dart';
 import '../../../../common/app_containers.dart';
 import '../../../../common/app_texts.dart';

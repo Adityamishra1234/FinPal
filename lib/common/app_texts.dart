@@ -230,6 +230,14 @@ class AppTexts {
   static const String enterYouAccountPin = "Enter your Account PIN";
   static const String securityReasons = "For security reasons, please enter you PIN to confirm your transaction.";
 
+  //link new bank
+  static const String linkNewBank = "Link Your Bank Account";
+  static const String taglineLinkBank = "We will surely connect you with\nour linking partner.";
+  static const String linkUp = "Link up bank account";
+  static const String linkBank = "Link new bank account";
+  static const String searchBank = "Please search your bank account or institution in\norder to proceed.";
+
+
 
 
 

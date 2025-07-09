@@ -10,6 +10,7 @@ import 'package:get/get.dart';
 
 import '../../../../common/app_images.dart';
 import '../../../../widgets/no_data_widget.dart';
+import '../../link_new_bank/views/link_new_bank_view.dart';
 import '../../transfer_to/views/transfer_to_view.dart';
 import '../controllers/home_controller.dart';
 
@@ -128,6 +129,7 @@ class HomeView extends GetView<HomeController> {
                                   color: AppColors.white,
                                   iconColor: AppColors.white,
                                   icon: Icons.add, buttonText: 'Link New Bank',
+                                  onTap: ()=> Get.to(()=> LinkNewBankView()),
               
                                 ),
                               ),
